@@ -1,0 +1,104 @@
+﻿@model Sistema_Pedidos_SmaXtec.Models.Pedido
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Pedido</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsuarioId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsuarioId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuantidadeBase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantidadeBase)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuantRepetidor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantRepetidor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuantSensorClimatico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantSensorClimatico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuantAplicador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantAplicador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuantSensor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantSensor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuantSensorPrimium)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantSensorPrimium)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataPedido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataPedido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProdutoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdutoId)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

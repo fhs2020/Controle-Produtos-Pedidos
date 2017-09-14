@@ -1,0 +1,98 @@
+﻿@model Sistema_Pedidos_SmaXtec.Models.Pedido
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pedido</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Cliente")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Vendedor")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeVendedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Quantidade Base")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantidadeBase)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Repetidor")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantRepetidor)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Sensor Climatico")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantSensorClimatico)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Aplicador")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantAplicador)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Sensor basico")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantSensor)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Sensor Premium")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantSensorPrimium)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Data pedido")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataPedido)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Valor Total")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorTotal)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Voltar ", "Index")
+</p>

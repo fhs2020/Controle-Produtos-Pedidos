@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema-Pedidos-SmaXtec", "Sistema-Pedidos-SmaXtec\Sistema-Pedidos-SmaXtec.csproj", "{668A7862-617F-4DE8-8718-AA540B3881BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema-Pedidos-SmaXtec.Tests", "Sistema-Pedidos-SmaXtec.Tests\Sistema-Pedidos-SmaXtec.Tests.csproj", "{A6915979-C6A2-4633-B05D-A072357CC9FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{668A7862-617F-4DE8-8718-AA540B3881BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{668A7862-617F-4DE8-8718-AA540B3881BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{668A7862-617F-4DE8-8718-AA540B3881BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{668A7862-617F-4DE8-8718-AA540B3881BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6915979-C6A2-4633-B05D-A072357CC9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6915979-C6A2-4633-B05D-A072357CC9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6915979-C6A2-4633-B05D-A072357CC9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6915979-C6A2-4633-B05D-A072357CC9FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFC49E11-78C2-49A7-950D-2897510FFD5D}
+	EndGlobalSection
+EndGlobal
