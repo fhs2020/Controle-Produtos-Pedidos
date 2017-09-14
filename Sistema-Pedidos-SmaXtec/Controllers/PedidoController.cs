@@ -138,6 +138,11 @@ namespace Sistema_Pedidos_SmaXtec.Controllers
                 return HttpNotFound();
             }
             ViewBag.ClienteID = new SelectList(db.Clientes, "ID", "Nome", pedido.ClienteID);
+            var user = db.Users.Find(pedido.UsuarioId); //new SelectList(db.Users, "IdD", "NomeVendedor", pedido.UsuarioId);
+            ViewBag.NomeVendedor = user.NomeUsuario;
+
+            pedido.NomeVendedor = user.NomeUsuario;
+
             return View(pedido);
         }
 

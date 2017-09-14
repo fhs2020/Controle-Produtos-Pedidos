@@ -4,7 +4,7 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
+<h2>Editar</h2>
 
 
 @using (Html.BeginForm())
@@ -18,15 +18,14 @@
         @Html.HiddenFor(model => model.Id)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.UsuarioId, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.UsuarioId, "Consultor", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.UsuarioId, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.UsuarioId, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.NomeVendedor, new { htmlAttributes = new { @class = "form-control" } })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.ClienteID, "ClienteID", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.ClienteID, "Cliente", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("ClienteID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.ClienteID, "", new { @class = "text-danger" })
@@ -34,7 +33,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.QuantidadeBase, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.QuantidadeBase, "Base", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.QuantidadeBase, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.QuantidadeBase, "", new { @class = "text-danger" })
@@ -42,7 +41,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.QuantRepetidor, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.QuantRepetidor, "Repetidor", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.QuantRepetidor, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.QuantRepetidor, "", new { @class = "text-danger" })
@@ -50,7 +49,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.QuantSensorClimatico, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.QuantSensorClimatico, "Sensor Climatico", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.QuantSensorClimatico, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.QuantSensorClimatico, "", new { @class = "text-danger" })
@@ -58,7 +57,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.QuantAplicador, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.QuantAplicador, "Aplicador", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.QuantAplicador, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.QuantAplicador, "", new { @class = "text-danger" })
@@ -66,7 +65,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.QuantSensor, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.QuantSensor, "Sensor basico", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.QuantSensor, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.QuantSensor, "", new { @class = "text-danger" })
@@ -74,7 +73,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.QuantSensorPrimium, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.QuantSensorPrimium, "Sensor Preimium", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.QuantSensorPrimium, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.QuantSensorPrimium, "", new { @class = "text-danger" })
@@ -82,20 +81,14 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.DataPedido, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.DataPedido, "Data", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.DataPedido, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.DataPedido, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.ProdutoId, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.ProdutoId, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.ProdutoId, "", new { @class = "text-danger" })
-            </div>
-        </div>
+  
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
